@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Weather Dashboard</h1>
+        </div>
+        <p class="intro">Enter a city to see its weather forecast.</p>
+
+        <div class="search">
+            <input id="cityInput" type="text" placeholder="Enter a city">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <p id="status"></p>
+        <button id="retryButton" hidden>Retry</button>  
+
+        <div id="weather" hidden>
+            <h2 id="cityName"></h2>
+            <p id="icon" class="icon"></p>
+            <p id="temp" class="temp"></p>
+            <p id="conditions"></p>
+            <p id="feelsLike"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+
+            <h3>3-Day Forecast</h3>
+            <div id="forecast" class="forecast"></div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
